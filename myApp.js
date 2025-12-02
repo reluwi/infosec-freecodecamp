@@ -24,8 +24,8 @@ app.use(helmet.noCache());
 
 app.use(helmet.contentSecurityPolicy({
   directives: {
-    defualtSrc: ["'self'"],
-    scriptSrc: ["'self'", 'trusted-cdn.com'],
+    defaultSrc: ["'self'"],
+    styleSrc: ["'self'", 'trusted-cdn.com'],
   }
 }));
 
